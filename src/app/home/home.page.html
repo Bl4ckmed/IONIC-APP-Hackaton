@@ -1,0 +1,19 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title >liste des sites</ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding >
+  <ion-list>
+    <ion-item (click)="onLoadSite()">
+      <ion-label  class="classlabel">{{ site_1 ? site_1 : '-' }}</ion-label>
+    </ion-item>
+    <ion-item (click)="onLoadSite()">
+      <ion-label class="classlabel">{{ site_2 ? site_2 : '-' }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
